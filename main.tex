@@ -1,0 +1,59 @@
+% !TEX program = pdflatex
+\documentclass[coverpage]{qadi-article} % use [compact] for no separate cover
+
+% Optional: set PDF metadata here
+\hypersetup{
+  pdftitle={Your Paper Title},
+  pdfauthor={David W. Thomson III},
+  pdfsubject={Research article},
+  pdfkeywords={QMU, APM, chronovibration, distributed charge, metrology},
+  pdfcreator={LaTeX}
+}
+
+% Optional: set class variables here
+% \renewcommand{\QADIVersion}{v1.2}
+% \renewcommand{\QADIDate}{October 29, 2025}
+% \renewcommand{\QADIROR}{\href{https://ror.org/XXXXXXXXX}{https://ror.org/XXXXXXXXX}}
+
+\title{Your Paper Title}
+\author{\QADIAuthor{David W.~Thomson III}{0000-0002-5830-5427}}
+% \QADIAuthor{James D.~Bourassa}{0009-0008-0155-0051}
+\date{\today}
+
+\begin{document}
+\QADIMakeTitle
+
+\begin{abstract}
+Concise statement of purpose and result. Ledger-first (QMU), no SI in the main text.
+\end{abstract}
+
+\QADIKeywords{QMU; APM; chronovibration; distributed charge; metrology}
+
+\section{Introduction}
+Institutional attribution follows the QADI reference identity~\cite{QADI_Community_DOI}.
+
+\section{Ledger Closure Check}
+A canonical closure used for sanity checks is
+\[
+\LedgerOne.
+\]
+
+\section{Method / Derivation}
+All steps must close dimensionally in QMU.
+
+\section{Results}
+Primary outcomes, plots, or invariants.
+
+\section{Discussion}
+Interpretation; no re-derivation.
+
+\section*{Acknowledgments}
+The Quantum AetherDynamics Institute (QADI) is a private 501(c)(3) research institute developing the
+Aether Physics Model (APM) and Quantum Measurement Units (QMU). Publications and data are archived with
+DOIs in the AetherPhysics Zenodo community: \href{https://zenodo.org/communities/aetherphysics}{zenodo.org/communities/aetherphysics}.
+
+% ---------- References ----------
+\bibliographystyle{unsrtnat}
+\bibliography{qadi_refs}
+
+\end{document}
