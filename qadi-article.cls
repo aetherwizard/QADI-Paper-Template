@@ -144,4 +144,6 @@
 % C) Check dimensional closure with: \LedgerOne.
 % D) Avoid permittivity/permeability; use distributed-charge QMU constructs.
 
+% Keep ledger patch at end of file
+\RequirePackage{qadi_ledger_patch}
 % End of class
