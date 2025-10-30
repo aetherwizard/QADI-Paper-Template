@@ -2,16 +2,16 @@
 % Minimal APM/QMU macro set (ledger-first; no SI in main text)
 \newcommand{\ePart}{\mathrm e}
 \newcommand{\me}{{m_\ePart}}
-\newcommand{\lC}{{\lambda_C}}
-\newcommand{\Fq}{{F_q}}
+% --- base-symbol macros as single atoms ---
+\DeclareRobustCommand{\Fq}{\ensuremath{F_{\!q}}}         % tight subscript
+\DeclareRobustCommand{\lC}{\ensuremath{\lambda_{\!C}}}   % tight subscript
+\DeclareRobustCommand{\curlapm}{\ensuremath{\mathrm{curl}}}
+\DeclareRobustCommand{\Au}{\ensuremath{A_u}}
 \newcommand{\eesq}{{e^2}}
 \newcommand{\eemaxsq}{{e_{\mathrm{emax}}}^{2}}
-\newcommand{\Au}{{A_u}}
-\newcommand{\curlapm}{\mathrm{curl}}
 \newcommand{\volm}{\mathrm{volm}}
 \newcommand{\rson}{\mathrm{rson}}
 \newcommand{\mflx}{\mathrm{mflx}}
-\newcommand{\LedgerOne}{\Au \, \curlapm = \Fq^{2}\,\lC^{2}}
 \newcommand{\BaseSet}{\{\me,\lC,\Fq,\eesq,\eemaxsq\}}
 
 % Affiliation helpers
