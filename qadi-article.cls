@@ -47,21 +47,39 @@
 \newcommand{\QADIVersion}{Version 1.0}
 \newcommand{\QADIDate}{\today}
 
-% ---------- Minimal APM/QMU macro set (ledger-first; no SI) ----------
-\newcommand{\ePart}{\mathrm e}
-\newcommand{\me}{m_{\ePart}}
-\newcommand{\lC}{\lambda_C}
-\newcommand{\Fq}{F_q}
-\newcommand{\eesq}{e^{2}}
-\newcommand{\eemaxsq}{{e_{\mathrm{emax}}}^{2}}
-\newcommand{\Au}{A_u}
-\newcommand{\curlapm}{\mathrm{curl}}
-\newcommand{\volm}{\mathrm{volm}}
-\newcommand{\rson}{\mathrm{rson}}
-\newcommand{\mflx}{\mathrm{mflx}}
-\newcommand{\LedgerOne}{\Au \, \curlapm = \Fq^{2}\,\lC^{2}}
-\newcommand{\BaseSet}{\{\me,\lC,\Fq,\eesq,\eemaxsq\}}
+% -------- Core symbols --------
+\newcommand{\ePart}{\mathrm e}                   % electron symbol (text-safe)
+\DeclareRobustCommand{\me}{\ensuremath{m_{\ePart}}}
 
+% Tight-subscript base units
+\DeclareRobustCommand{\Fq}{\ensuremath{{F_q}}}
+\DeclareRobustCommand{\lC}{\ensuremath{{\lambda_C}}}
+
+% Aether / field ledger primitives
+\DeclareRobustCommand{\curlapm}{\ensuremath{\mathrm{curl}}}
+\DeclareRobustCommand{\Au}{\ensuremath{{A_u}}}
+\DeclareRobustCommand{\kC}{\ensuremath{{k_C}}}
+\DeclareRobustCommand{\ma}{\ensuremath{{m_a}}}
+\DeclareRobustCommand{\Gforce}{\ensuremath{\mathrm{Gforce}}}
+
+% Charges (square-charge convention)
+\DeclareRobustCommand{\eesq}{\ensuremath{{e^2}}}
+\DeclareRobustCommand{\eemaxsq}{\ensuremath{{e_\mathrm{emax}}^{2}}}
+\DeclareRobustCommand{\ea}{\ensuremath{{e_a}^{2}}}
+
+% Other named QMU units / symbols
+\DeclareRobustCommand{\volm}{\ensuremath{\mathrm{volm}}}
+\DeclareRobustCommand{\rson}{\ensuremath{\mathrm{rson}}}
+\DeclareRobustCommand{\mflx}{\ensuremath{\mathrm{mflx}}}
+\DeclareRobustCommand{\alphafs}{\ensuremath{\alpha}}
+\DeclareRobustCommand{\PhiGR}{\ensuremath{\Phi}}
+\DeclareRobustCommand{\Hbase}{\ensuremath{\frac{\pi}{3\sqrt{2}}}}
+
+% Canonical constants / ratios
+\DeclareRobustCommand{\AGCratio}{\ensuremath{16\pi^{2}}}
+
+% -------- Sets and identities (ready-to-drop ledger snippets) --------
+\DeclareRobustCommand{\BaseSet}{\ensuremath{\{\me,\lC,\Fq,\eesq,\eemaxsq\}}}
 % ---------- Affiliation helpers ----------
 % \QADIAffiliation[<RORcode>]  (optional arg not required if \QADIROR set)
 \newcommand{\QADIAffiliation}[1][]{%
